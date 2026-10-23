@@ -1,0 +1,14 @@
+{
+  "name": "bosque-webos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preview": "node scripts/preview.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check app/main.js",
+    "package": "node scripts/package.cjs"
+  },
+  "devDependencies": {
+    "@webos-tools/cli": "3.2.6"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "com.bosque.launcher",
+  "version": "1.0.0",
+  "vendor": "Comunidad Bosque",
+  "type": "web",
+  "main": "index.html",
+  "title": "Bosque",
+  "icon": "icon.png",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "requiredACG": [
+    "application.launcher"
+  ]
+}

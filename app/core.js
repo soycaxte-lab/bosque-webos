@@ -1,0 +1,5 @@
+(function(root){'use strict';
+function parseApps(text){var lines=text.split(/\r?\n/).filter(function(l){return l.trim();});if(!lines.length||lines.length>9)throw Error('Añade entre 1 y 9 aplicaciones.');return lines.map(function(line){var p=line.split('|'),name=(p[0]||'').trim(),id=(p[1]||'').trim(),params={};if(!name||name.length>40||!/^[a-zA-Z0-9._-]+$/.test(id)||p.length>3)throw Error('Revisa el nombre y el identificador de cada aplicación.');if(p[2]&&p[2].trim()){try{params=JSON.parse(p[2]);}catch(e){throw Error('Los parámetros deben ser JSON válido.');}}if(!params||typeof params!=='object'||Array.isArray(params))throw Error('Los parámetros deben ser un objeto JSON.');return {name:name,id:id,label:name,params:params};});}
+function validBackground(v){return /^https:\/\/[^\s"'()<>\\]+$/.test(v)||/^assets\/[a-zA-Z0-9/_.-]+\.(svg|png|jpg|jpeg|webp)$/i.test(v)&&v.indexOf('..')===-1;}
+function nextIndex(i,d,n){return(i+d+n)%n;}
+var api={parseApps:parseApps,validBackground:validBackground,nextIndex:nextIndex};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BosqueCore=api;})(this);

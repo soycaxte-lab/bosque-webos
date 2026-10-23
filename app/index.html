@@ -1,0 +1,12 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bosque · Inicio</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="landscape"></div><div class="shade"></div>
+<main><header><section><div class="datetime"><time id="clock">--:--</time><span id="date"></span></div><p id="room"></p><p id="greeting"></p></section><nav class="tools" aria-label="Personalización"><button id="background" aria-label="Cambiar ambiente">▧</button><button id="quiet" aria-label="Modo ambiente">☾</button><button id="settings-open" aria-label="Abrir ajustes">⚙</button></nav></header>
+<section class="launcher" aria-label="Aplicaciones"><nav id="dock" aria-label="Abrir una aplicación"></nav><p id="selection"></p></section>
+<footer><span class="brand">BOSQUE / TU ESPACIO</span><span>↑↓←→ Mover · OK Abrir · Azul: Ajustes</span></footer></main>
+<section id="settings" class="overlay" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden><div class="panel"><p class="eyebrow">HAZLO TUYO</p><h1 id="settings-title">Un lugar para ti.</h1><p>Los cambios se guardan en este televisor.</p><form id="settings-form">
+<label>Nombre de la sala<input id="room-input" maxlength="40"></label>
+<label>Fondo: ruta local o URL HTTPS<input id="background-input"></label>
+<label>Accesos: nombre | identificador | parámetros JSON (opcional)<textarea id="apps-input" rows="7" spellcheck="false"></textarea></label><p class="help">Una aplicación por línea; hasta 9.</p><p id="form-error" role="alert"></p>
+<div class="actions"><button type="button" id="cancel">Cancelar</button><button type="submit" class="primary">Guardar cambios</button></div></form></div></section>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script src="vendor/webOSTV.js"></script><script src="config.js"></script><script src="core.js"></script><script src="main.js"></script></body></html>

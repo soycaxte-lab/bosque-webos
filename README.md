@@ -3,6 +3,22 @@ Una pantalla de inicio tranquila: bosque con niebla, reloj y fecha en español y
 
 **Primera versión experimental. Pendiente de validación en un televisor físico.** La vista previa en ordenador no abre aplicaciones del TV.
 
+## Así se ve
+
+Capturas reales de la aplicación en la vista previa de navegador. El aspecto puede variar según el motor gráfico del televisor.
+
+### Bosque con niebla
+
+![Pantalla principal de Bosque con reloj en español y barra de aplicaciones](docs/images/bosque.jpg)
+
+### Ambiente nocturno
+
+![Launcher Bosque con fondo nocturno y luna](docs/images/noche.jpg)
+
+### Ajustes por televisor
+
+![Panel de ajustes para cambiar sala, fondo y aplicaciones](docs/images/ajustes.jpg)
+
 ## Incluye
 - Dos fondos vectoriales originales: bosque y noche.
 - Reloj, fecha y saludo en español.
